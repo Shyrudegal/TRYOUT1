@@ -54,3 +54,22 @@ body.dark-mode b {
 body.dark-mode #main-intro {
   color: white;
 }
+
+/* Mobile Responsiveness - Day 2 */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  main {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  .links a {
+    display: block;
+    margin: 10px 0;
+  }
+}
