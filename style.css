@@ -33,3 +33,24 @@ a {
  .dark-mode h1 {
     color: #ff8c42 !important;
  }
+ body.dark-mode {
+  background: #121212;
+  color: white;
+}
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode b {
+  color: white !important;
+}
+#typed-text {
+  color: #0a7d33;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#main-intro {
+  color: black;
+}
+body.dark-mode #main-intro {
+  color: white;
+}
