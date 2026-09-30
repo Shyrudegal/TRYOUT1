@@ -28,7 +28,7 @@ a {
  }
 
  .dark-mode {
-    background:#1a1a1a !important; color:#eee !important; 
+    background:#000000 !important; color:#eee !important; 
  }
  .dark-mode h1 {
     color: #ff8c42 !important;
@@ -72,4 +72,47 @@ body.dark-mode #main-intro {
     display: block;
     margin: 10px 0;
   }
+}
+  .toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc; /* light mode color */
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* This na the colorful part when e don turn ON (dark mode) */
+.toggle input:checked + .slider {
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+}
+
+.toggle input:checked + .slider::before {
+  transform: translateX(28px);
 }
